@@ -364,7 +364,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
   - [Part 14: Console](https://github.com/SSYGEN/blog/issues/28)
   - [Part 15: Final](https://github.com/SSYGEN/blog/issues/29)
 
-## Python:
+## Python for practice:
 
 ### Web Scraping:
 
