@@ -105,7 +105,8 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
   - [Part 7: Arrays](https://briancallahan.net/blog/20210822.html)
   - [Part 8: Strings, forward references, and conclusion](https://briancallahan.net/blog/20210826.html)
 
-### Network programming
+### Network programming 
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - Let's Code a TCP/IP Stack
 
@@ -134,6 +135,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
   - [Bonus - Multithreading](https://codepr.github.io/posts/sol-mqtt-broker-bonus)
 
 ### OpenGL:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - Creating 2D Breakout game clone in C++ with OpenGL
   - [Breakout](https://learnopengl.com/In-Practice/2D-Game/Breakout)
@@ -154,6 +156,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [How to Make Minecraft in C++/OpenGL](https://www.youtube.com/playlist?list=PLMZ_9w2XRxiZq1vfw1lrpCMRDufe2MKV_) (video)
 
 ## C#:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Learn C# By Building a Simple RPG Game](http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/)
 - [Create a Rogue-like game in C#](https://roguesharp.wordpress.com/)
@@ -162,6 +165,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Building the CoreWiki](https://www.youtube.com/playlist?list=PLVMqA0_8O85yC78I4Xj7z48ES48IQBa7p) This is a Wiki-style content management system that has been completely written in C# with ASP.NET Core and Razor Pages. You can find the source code [here](https://github.com/csharpfritz/CoreWiki).
 
 ## Clojure:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Build a Twitter Bot with Clojure](http://howistart.org/posts/clojure/1/index.html)
 - [Building a Spell-Checker](https://bernhardwenzel.com/articles/clojure-spellchecker/)
@@ -170,6 +174,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Tetris in ClojureScript](https://shaunlebron.github.io/t3tr0s-slides)
 
 ## Dart:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 ### Flutter:
 
@@ -188,20 +193,24 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Netflix Clone](https://youtu.be/J8IFNKzs3TI)
 
 ## Elixir
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Building a Simple Chat App With Elixir and Phoenix](https://sheharyar.me/blog/simple-chat-phoenix-elixir/)
 - [How to write a super fast link shortener with Elixir, Phoenix, and Mnesia](https://medium.com/free-code-camp/how-to-write-a-super-fast-link-shortener-with-elixir-phoenix-and-mnesia-70ffa1564b3c)
 
 ## Erlang
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [ChatBus : build your first multi-user chat room app with Erlang/OTP](https://medium.com/@kansi/chatbus-build-your-first-multi-user-chat-room-app-with-erlang-otp-b55f72064901)
 - [Making a Chat App with Erlang, Rebar, Cowboy and Bullet](http://marianoguerra.org/posts/making-a-chat-app-with-erlang-rebar-cowboy-and-bullet.html)
 
 ## F#:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Write your own Excel in 100 lines of F#](http://tomasp.net/blog/2018/write-your-own-excel)
 
 ## Java:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Build an Interpreter](http://www.craftinginterpreters.com/) (Chapter 4-13 is written in Java)
 - [Build a Simple HTTP Server with Java](http://javarevisited.blogspot.com/2015/06/how-to-create-http-server-in-java-serversocket-example.html)
@@ -209,6 +218,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Build a Spring Boot App with User Authentication](https://spring.io/guides/gs/securing-web/)
 
 ## JavaScript:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Build 30 things in 30 days with 30 tutorials](https://javascript30.com)
 - [Build an App in Pure JS](https://medium.com/codingthesmartway-com-blog/pure-javascript-building-a-real-world-application-from-scratch-5213591cfcd6)
@@ -218,6 +228,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Build a Todo List App in JavaScript](https://github.com/dwyl/javascript-todo-list-tutorial)
 
 ## HTML and CSS:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Build A Loading Screen](https://medium.freecodecamp.org/how-to-build-a-delightful-loading-screen-in-5-minutes-847991da509f)
 - [Build an HTML Calculator with JS](https://medium.freecodecamp.org/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98)
@@ -339,10 +350,12 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Build A Realtime Serverless GraphQL API with WebSockets on AWS](https://andrewgriffithsonline.com/blog/serverless-websockets-on-aws/)
 
 ## Kotlin:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Keddit - Learn Kotlin While Developing an Android Application](https://medium.com/@juanchosaravia/learn-kotlin-while-developing-an-android-app-introduction-567e21ff9664)
 
 ## Lua:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 ### LÖVE:
 
@@ -365,6 +378,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
   - [Part 15: Final](https://github.com/SSYGEN/blog/issues/29)
 
 ## Python:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 ### Web Scraping:
 
@@ -528,6 +542,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Create a Voice assistant using Python](https://www.geeksforgeeks.org/voice-assistant-using-python/)
 
 ## Go:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Create a Real Time Chat App with Golang, Angular 2, and WebSocket](https://www.thepolyglotdeveloper.com/2016/12/create-real-time-chat-app-golang-angular-2-websockets/)
 - [Building Go Web Applications and Microservices Using Gin](https://semaphoreci.com/community/tutorials/building-go-web-applications-and-microservices-using-gin)
@@ -568,6 +583,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [REST API masterclass with Go, PostgreSQL and Docker(video playlist)`in progress`](https://www.youtube.com/watch?v=rx6CPDK_5mU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 
 ## PHP:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [How To Build A Blog With Laravel](https://www.youtube.com/playlist?list=PLwAKR305CRO-Q90J---jXVzbOd4CDRbVx) (video)
 - [Make Your Own Blog (in Pure PHP)](http://ilovephp.jondh.me.uk/en/tutorial/make-your-own-blog)
@@ -586,11 +602,13 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Build a Laravel CRUD Application From Scratch](https://www.codewall.co.uk/laravel-crud-demo-with-resource-controller-tutorial/)
 
 ## OCaml:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Implement a Language with LLVM in OCaml](https://llvm.org/docs/tutorial/#kaleidoscope-implementing-a-language-with-llvm-in-objective-caml)
 - [Writing a Game Boy Emulator in OCaml](https://linoscope.github.io/writing-a-game-boy-emulator-in-ocaml/)
 
 ## Ruby:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Build a Network Stack with Ruby](https://medium.com/geckoboard-under-the-hood/how-to-build-a-network-stack-in-ruby-f73aeb1b661b)
 - Build your own Redis
@@ -609,6 +627,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [How To Build a Ruby on Rails Application](https://www.digitalocean.com/community/tutorials/how-to-build-a-ruby-on-rails-application)
 
 ## Haskell:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Write You a Haskell - Build a modern functional compiler](http://dev.stephendiehl.com/fun/)
 - [Write Yourself a Scheme in 48 hours](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours)
@@ -618,12 +637,14 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Making a Website with Haskell **(outdated)**](http://adit.io/posts/2013-04-15-making-a-website-with-haskell.html)
 
 ## R:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Build Web Apps with Shiny](http://shiny.rstudio.com/tutorial/)
 - [Build A Cryptocurrency Bot](https://towardsdatascience.com/build-a-cryptocurrency-trading-bot-with-r-1445c429e1b1)
 - [Learn Associate Rule Mining in R](https://towardsdatascience.com/association-rule-mining-in-r-ddf2d044ae50)
 
 ## Rust:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - A Simple Web App in Rust
   - [Part 1](http://joelmccracken.github.io/entries/a-simple-web-app-in-rust-pt-1/)
@@ -646,6 +667,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
   - [Part 4](https://pwy.io/en/posts/learning-to-fly-pt4/)
 
 ## Scala:
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [Simple actor-based blockchain](https://www.freecodecamp.org/news/how-to-build-a-simple-actor-based-blockchain-aac1e996c177/)
 - [No Magic: Regular Expressions](https://rcoh.svbtle.com/no-magic-regular-expressions)
@@ -656,6 +678,7 @@ To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIB
 - [Retro first-person shooter from scratch](https://github.com/nicklockwood/RetroRampage)
 
 ## Additional Resources
+<a href="#top" style="text-align: right;">Back to top</a>
 
 - [React Redux Links](https://github.com/markerikson/react-redux-links)
 - [Udemy.com](https://www.udemy.com/)
