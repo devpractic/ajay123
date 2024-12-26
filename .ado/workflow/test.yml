@@ -14,19 +14,19 @@ variables:
   adminPassword: 'Password@123' # Consider using a secret variable for sensitive information
 
 stages:
-# - stage: CreateResourceGroup
-#   jobs:
-#   - job: CreateResourceGroupJob
-#     displayName: 'Create Azure Resource Group'
-#     steps:
-#       - task: AzureCLI@2
-#         inputs:
-#           azureSubscription: $(azureSubscription)
-#           scriptType: 'bash'
-#           scriptLocation: 'inlineScript'
-#           inlineScript: |
-#             # Create a Resource Group
-#             az group create --name $(resourceGroupName) --location $(location)
+- stage: CreateResourceGroup
+  jobs:
+  - job: CreateResourceGroupJob
+    displayName: 'Create Azure Resource Group'
+    steps:
+      - task: AzureCLI@2
+        inputs:
+          azureSubscription: $(azureSubscription)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            # Create a Resource Group
+            az group create --name $(resourceGroupName) --location $(location)
 
 - stage: DeployVM
   jobs:
