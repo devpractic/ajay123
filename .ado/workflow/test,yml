@@ -1,0 +1,131 @@
+trigger:
+  - javatest
+  
+
+pool:
+  name: 'vmtest'
+
+variables:
+  azureSubscription: 'vmcreation'
+  resourceGroupName: 'vmcreation'
+  location: 'eastus'
+  vmName: 'vmautomation'
+  adminUsername: 'azure'
+  adminPassword: 'Password@123' # Consider using a secret variable for sensitive information
+
+stages:
+# - stage: CreateResourceGroup
+#   jobs:
+#   - job: CreateResourceGroupJob
+#     displayName: 'Create Azure Resource Group'
+#     steps:
+#       - task: AzureCLI@2
+#         inputs:
+#           azureSubscription: $(azureSubscription)
+#           scriptType: 'bash'
+#           scriptLocation: 'inlineScript'
+#           inlineScript: |
+#             # Create a Resource Group
+#             az group create --name $(resourceGroupName) --location $(location)
+
+- stage: DeployVM
+  jobs:
+  - job: CreateVM
+    displayName: 'Create a Linux VM in Azure'
+    steps:
+      - script: |
+          sudo apt-get update
+          sudo apt-get install -y ca-certificates curl apt-transport-https lsb-release gnupg
+          curl -sL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+          AZ_REPO=$(lsb_release -cs)
+          echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
+          sudo apt-get update
+          sudo apt-get install -y azure-cli
+          az --version
+        displayName: 'Install Azure CLI'
+
+      
+      - task: AzureCLI@2
+        inputs:
+          azureSubscription: $(azureSubscription)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            # Your Azure CLI commands here
+            az --version  # Check Azure CLI version
+
+      - task: AzureCLI@2
+        inputs:
+          azureSubscription: $(azureSubscription)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            # Create Resource Group
+            az group create --name $(resourceGroupName) --location $(location)
+
+            # Create Virtual Network
+            az network vnet create \
+              --resource-group $(resourceGroupName) \
+              --name vmVNet \
+              --address-prefix 10.0.0.0/16 \
+              --subnet-name vmSubnet \
+              --subnet-prefix 10.0.0.0/24
+
+            # Create Public IP
+            az network public-ip create \
+              --resource-group $(resourceGroupName) \
+              --name vmPublicIP
+
+            # Create Network Security Group
+            az network nsg create \
+              --resource-group $(resourceGroupName) \
+              --name vmNSG
+
+            # Create NIC
+            az network nic create \
+              --resource-group $(resourceGroupName) \
+              --vnet-name vmVNet \
+              --subnet vmSubnet \
+              --name vmNic \
+              --network-security-group vmNSG \
+              --public-ip-address vmPublicIP
+
+            # Create Virtual Machine
+            az vm create \
+              --resource-group $(resourceGroupName) \
+              --name $(vmName) \
+              --nics vmNic \
+              --image Ubuntu2204 \
+              --size Standard_NV4as_v4 \
+              --admin-username $(adminUsername) \
+              --admin-password $(adminPassword)
+
+            # Open Port 22 for SSH
+            az vm open-port \
+              --port 22 \
+              --resource-group $(resourceGroupName) \
+              --name $(vmName)
+
+- stage: DeleteVM
+  jobs:
+  - job: DeleteVMJob
+    displayName: 'Delete a Linux VM in Azure'
+    steps:
+      - task: AzureCLI@2
+        inputs:
+          azureSubscription: $(azureSubscription)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            # Delete the VM and related resources
+            az vm delete \
+              --resource-group $(resourceGroupName) \
+              --name $(vmName) \
+              --yes
+
+            # Optionally delete other associated resources
+            az network nic delete --resource-group $(resourceGroupName) --name vmNic
+            az network public-ip delete --resource-group $(resourceGroupName) --name vmPublicIP
+            az disk delete --resource-group $(resourceGroupName) --name $(vmName)_OSDisk --yes
+            az network nsg delete --resource-group $(resourceGroupName) --name vmNSG
+            az network vnet delete --resource-group $(resourceGroupName) --name vmVNet
