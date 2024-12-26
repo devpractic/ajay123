@@ -3,13 +3,13 @@ trigger:
   
 
 pool:
-  name: 'vmtest'
+  name: 'Ajay'
 
 variables:
-  azureSubscription: 'vmcreation'
-  resourceGroupName: 'vmcreation'
+  azureSubscription: 'vmconnection'
+  resourceGroupName: 'harsha'
   location: 'eastus'
-  vmName: 'vmautomation'
+  vmName: 'vmajay'
   adminUsername: 'azure'
   adminPassword: 'Password@123' # Consider using a secret variable for sensitive information
 
